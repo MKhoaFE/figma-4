@@ -223,37 +223,59 @@ body {
 .section .top {
   margin: 0 10%;
 }
+@media (max-width: 1000px) {
+  .section .top {
+    margin: 0;
+    margin-top: 10%;
+  }
+}
 .section .top h2 {
   width: 50%;
+}
+@media (max-width: 1000px) {
+  .section .top h2 {
+    width: 100%;
+    text-align: center;
+  }
 }
 .section .top .wrap {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 }
-.section .top .wrap .item {
-  width: 30%;
+@media (max-width: 1000px) {
+  .section .top .wrap {
+    width: 100vw;
+  }
 }
-.section .top .wrap .item .icon {
+.section .top .wrap .item-slide {
+  width: 33%;
+}
+@media (max-width: 1000px) {
+  .section .top .wrap .item-slide {
+    width: 900px;
+  }
+}
+.section .top .wrap .item-slide .icon {
   width: 30px;
   height: 30px;
   background: linear-gradient(0deg, #d5d7f6 30%, #b6bafe 70%);
   padding: 20px;
   border-radius: 7px;
 }
-.section .top .wrap .item .icon .bi {
+.section .top .wrap .item-slide .icon .bi {
   color: #232ed1;
   align-items: center;
   display: flex;
   justify-content: center;
   height: 100%;
 }
-.section .top .wrap .item .title {
+.section .top .wrap .item-slide .title {
   font-weight: 500;
   font-size: 22px;
   margin-top: 1rem;
 }
-.section .top .wrap .item .desc {
+.section .top .wrap .item-slide .desc {
   font-weight: 400;
 }
 .section .hidden-content {
@@ -262,6 +284,7 @@ body {
 @media (max-width: 768px) {
   .section .hidden-content {
     display: block;
+    margin-top: 10%;
   }
   .section .hidden-content h2 {
     text-align: center;
@@ -348,6 +371,11 @@ body {
 .section .happy-section {
   margin: 0 15%;
   display: flex;
+}
+@media (max-width: 1000px) {
+  .section .happy-section {
+    display: none;
+  }
 }
 .section .happy-section .image img {
   width: 900px;

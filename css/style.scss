@@ -114,6 +114,7 @@ body {
   }
 
   .wrap {
+
     margin-top: 10%;
     position: absolute;
     display: flex;
@@ -123,6 +124,10 @@ body {
     @media (max-width: 768px) {
       display: block;
       margin-top: 40%;
+    }
+    @media (min-width: 2560px) {
+      margin: 0 20%;
+      margin-top: 10%;
     }
   }
   .left {
@@ -184,6 +189,10 @@ body {
   }
   img {
     width: 70%;
+    @media (max-width: 1000px) {
+      width: 100%;
+      
+    }
   }
   .overlay-1 {
     position: absolute;
@@ -196,6 +205,9 @@ body {
     @media (max-width: 1000px) {
       display: none;
     }
+    @media (min-width: 2560px) {
+      display: none;
+    }
   }
   .overlay-2 {
     position: absolute;
@@ -206,6 +218,9 @@ body {
     bottom: 0;
     right: 0;
     @media (max-width: 1000px) {
+      display: none;
+    }
+    @media (min-width: 2560px) {
       display: none;
     }
   }
@@ -447,6 +462,17 @@ body {
       .card {
         border-radius: 15px;
         background: linear-gradient(0deg, #d5d7f6 30%, #b6bafe 70%);
+        @media (min-width: 2560px) {
+          height: 15rem;
+        }
+        .content{
+          p{
+            @media (min-width: 2560px) {
+              margin-top: 2rem;   
+            }
+          }
+
+        }
         @media (max-width: 768px) {
           width: 100vw;
         }
@@ -524,7 +550,7 @@ body {
     position: relative;
     background-color: #eff0f8;
     @media (max-width:1000px) {
-      height: 70vh;
+      height: 100vh;
     }
     .wrap {
       display: flex;
@@ -613,11 +639,13 @@ body {
       display: block;
       justify-content: center;
       align-items: center;
+      
       .top{
         height: 70%;
         display: flex;
         padding: 120px 20px 20px 20px;
         justify-content: space-between;
+
         @media (max-width:1000px) {
           flex-wrap: wrap;
           height: auto;
