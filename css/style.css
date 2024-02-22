@@ -131,7 +131,7 @@ body {
 @media (max-width: 768px) {
   .container-main .wrap {
     display: block;
-    margin-top: 40%;
+    margin-top: 30%;
   }
 }
 @media (min-width: 2560px) {
