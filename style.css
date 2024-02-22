@@ -403,18 +403,29 @@ body {
 }
 .section .bottom .content .text {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   text-align: start;
 }
 @media (max-width: 1000px) {
-  .section .bottom .content .text h3 {
-    font-size: 15px;
+  .section .bottom .content .text {
+    justify-content: center;
   }
+}
+@media (max-width: 1000px) {
+  .section .bottom .content .text h3 {
+    font-size: 19px;
+  }
+}
+.section .bottom .content .text p {
+  width: 80%;
+  text-align: left;
 }
 @media (max-width: 1000px) {
   .section .bottom .content .text p {
     font-size: 10px;
+    width: 100%;
+    text-align: center;
   }
 }
 .section .hidden-content {

@@ -164,6 +164,7 @@ body {
     }
   }
   .right {
+
     @media (max-width: 768px) {
       margin: 0;
     }
@@ -367,20 +368,24 @@ body {
       }
       .text {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
         text-align: start;
         @media (max-width: 1000px) {
-
+          justify-content: center;
         }
         h3 {
           @media (max-width: 1000px) {
-            font-size: 15px;
+            font-size: 19px;
           }
         }
         p {
+          width: 80%;
+          text-align: left;
           @media (max-width: 1000px) {
             font-size: 10px;
+            width: 100%;
+            text-align: center;
           }
         }
       }
