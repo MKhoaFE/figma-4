@@ -44,3 +44,16 @@ document.querySelector(".btn1-right").addEventListener("click", function() {
   wrap_1.style.transform = "translateX(" + position_1 + "px)";
 
 });
+
+
+//hàm kiểm tra phân giải màn hình, nếu lớn hơn 768px thì set translateX về 0
+function adjustTransform() {
+  const slidesContainer = document.querySelector('.wrap-slide');
+  
+  if (window.innerWidth >= 768) {
+    slidesContainer.style.transform = 'translateX(0)';
+  }
+}
+//resize và load là 2 sự kiện có sẵn trong web
+window.addEventListener('resize', adjustTransform);
+window.addEventListener('load', adjustTransform);
