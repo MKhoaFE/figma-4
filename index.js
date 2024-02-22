@@ -57,3 +57,14 @@ function adjustTransform() {
 //resize và load là 2 sự kiện có sẵn trong web
 window.addEventListener('resize', adjustTransform);
 window.addEventListener('load', adjustTransform);
+
+
+//
+function dropdownFunction(){
+  var x = document.getElementById("test");
+  if(x.style.display === "none"){
+    x.style.display = "block";
+  }else{
+    x.style.display = "none";
+  }
+}

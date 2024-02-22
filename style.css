@@ -111,6 +111,11 @@ body {
     height: 80%;
   }
 }
+@media (max-height: 700px) {
+  .container-main {
+    height: 100vh;
+  }
+}
 .container-main .wrap {
   margin-top: 10%;
   position: absolute;
@@ -145,10 +150,34 @@ body {
   background: none;
   padding: 10px;
 }
+@media (max-width: 768px) {
+  .container-main .left .btn-2 {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .container-main .left {
+    margin: 0 10%;
+  }
+  .container-main .left h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .container-main .right {
+    margin: 0;
+  }
+}
 .container-main .right img {
   border-radius: 0px 24px 24px 24px;
   z-index: 99;
   position: relative;
+}
+@media (max-width: 768px) {
+  .container-main .right img {
+    padding: 0;
+    border-radius: 24px;
+  }
 }
 .container-main .right .inside {
   display: flex;
@@ -181,8 +210,7 @@ body {
 }
 @media (max-width: 768px) {
   .container-main .right {
-    margin: 0 10%;
-    margin-top: 20%;
+    margin: 10% 10% 0 10%;
   }
   .container-main .right img {
     width: 100%;
@@ -363,10 +391,9 @@ body {
   .section .bottom .content {
     width: 100%;
     border-radius: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
+    display: block;
   }
 }
 .section .bottom .content .text {
@@ -391,6 +418,7 @@ body {
 @media (max-width: 768px) {
   .section .hidden-content {
     display: block;
+    margin-top: 2rem;
   }
   .section .hidden-content h2 {
     text-align: center;
@@ -398,12 +426,13 @@ body {
   }
 }
 .section .feature-section {
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 @media (max-width: 768px) {
   .section .feature-section {
     height: 500px;
     overflow-y: auto;
+    margin-top: 0rem;
   }
 }
 .section .feature-section .content {
@@ -417,6 +446,7 @@ body {
     display: block;
     background-color: #dddefc;
     height: 500px;
+    border-radius: 15px;
   }
 }
 .section .feature-section .content .image {
@@ -446,6 +476,9 @@ body {
     width: 100%;
   }
 }
+.section .feature-section .content .special-img img {
+  width: 70%;
+}
 .section .feature-section .content .text {
   width: 50%;
   padding: 10px;
@@ -460,6 +493,22 @@ body {
 }
 .section .feature-section .content .text a {
   text-decoration: none;
+}
+.section .feature-section .content .text h3 {
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .section .feature-section .content .text h3 {
+    width: 100%;
+  }
+}
+.section .feature-section .content .text p {
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .section .feature-section .content .text p {
+    width: 100%;
+  }
 }
 .section .feature-section .content .text span {
   cursor: pointer;
@@ -503,36 +552,59 @@ body {
     gap: 0;
   }
 }
-.section .custome-section .wrap-slide .card {
+@media (max-width: 768px) {
+  .section .custome-section .wrap-slide .item-slide {
+    margin: 0;
+  }
+}
+.section .custome-section .wrap-slide .item-slide .card {
   border-radius: 15px;
   background: linear-gradient(0deg, #d5d7f6 30%, #b6bafe 70%);
 }
+@media (max-width: 768px) {
+  .section .custome-section .wrap-slide .item-slide .card {
+    margin: 0 10vw;
+  }
+}
 @media (min-width: 2560px) {
-  .section .custome-section .wrap-slide .card {
+  .section .custome-section .wrap-slide .item-slide .card {
     height: 15rem;
   }
 }
 @media (min-width: 2560px) {
-  .section .custome-section .wrap-slide .card .content p {
+  .section .custome-section .wrap-slide .item-slide .card .content p {
     margin-top: 2rem;
   }
 }
 @media (max-width: 768px) {
-  .section .custome-section .wrap-slide .card {
-    width: 100vw;
+  .section .custome-section .wrap-slide .item-slide .card {
+    width: 80vw;
   }
 }
-@media (min-width: 768px) {
-  .section .custome-section .wrap-slide .card {
-    transform: translateX(0px);
+@media (min-width: 1000px) {
+  .section .custome-section .wrap-slide .item-slide .card {
+    transform: translateX(0px, 100%);
   }
 }
-.section .custome-section .wrap-slide .card .card-body .wrapper {
+.section .custome-section .wrap-slide .item-slide .card .card-body .wrapper {
   display: flex;
   gap: 20px;
 }
-.section .custome-section .wrap-slide .card .card-body .wrapper .text .bi {
+@media (max-width: 768px) {
+  .section .custome-section .wrap-slide .item-slide .card .card-body .wrapper {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.section .custome-section .wrap-slide .item-slide .card .card-body .wrapper .text .bi {
   color: yellow;
+}
+@media (max-width: 768px) {
+  .section .custome-section .wrap-slide .item-slide .card .card-body .content {
+    text-align: center;
+    margin: 0 10%;
+  }
 }
 .section .custome-section .button-hidden {
   display: none;
@@ -560,6 +632,9 @@ body {
     margin: 0;
   }
 }
+.section .faq h2 {
+  cursor: pointer;
+}
 @media (max-width: 1000px) {
   .section .faq h2 {
     text-align: center;
@@ -575,6 +650,11 @@ body {
 @media (max-width: 1000px) {
   .section .faq .title {
     width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .section .faq .title .dropdown {
+    display: none;
   }
 }
 .section .faq .title p {
@@ -598,7 +678,12 @@ body {
 }
 @media (max-width: 1000px) {
   .section .footer {
-    height: 100vh;
+    height: 70vh;
+  }
+}
+@media (max-height: 740px) {
+  .section .footer {
+    height: 90vh;
   }
 }
 .section .footer .wrap {
@@ -611,7 +696,7 @@ body {
 }
 @media (max-width: 1000px) {
   .section .footer .wrap {
-    justify-content: space-between;
+    display: block;
   }
 }
 .section .footer .wrap .mini-orange-box {
@@ -638,6 +723,7 @@ body {
 @media (max-width: 1000px) {
   .section .footer .wrap .blue-box {
     width: 100%;
+    justify-content: space-around;
   }
 }
 .section .footer .wrap .blue-box .text {
@@ -653,6 +739,9 @@ body {
   .section .footer .wrap .blue-box .text {
     width: 50%;
     margin: 0;
+  }
+  .section .footer .wrap .blue-box .text span {
+    margin-left: 10%;
   }
 }
 .section .footer .wrap .blue-box .btn {
@@ -679,7 +768,8 @@ body {
 }
 @media (max-width: 1000px) {
   .section .footer .wrap .blue-box .btn button {
-    padding: 5px 30px;
+    padding: 15px 20px;
+    margin-right: 10%;
   }
 }
 .section .footer .wrap .mini-blue-box {
@@ -769,6 +859,7 @@ body {
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
+  font-size: 15px;
 }
 .section .copy-right {
   background-color: #232ed1;
