@@ -598,6 +598,7 @@ body {
       font-weight: 600;
       padding: 0;
       text-align: left;
+      color: black;
       @media (max-width: 1000px) {
         
       }
@@ -642,6 +643,9 @@ body {
       height: 90vh;
     }    
     @media (height: 667px) {
+      height: 90vh;
+    }
+    @media (max-height: 700px) {
       height: 90vh;
     }
     .wrap {

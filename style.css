@@ -657,6 +657,7 @@ body {
   font-weight: 600;
   padding: 0;
   text-align: left;
+  color: black;
 }
 .section .faq .title {
   margin-top: 1rem;
@@ -704,6 +705,11 @@ body {
   }
 }
 @media (height: 667px) {
+  .section .footer {
+    height: 90vh;
+  }
+}
+@media (max-height: 700px) {
   .section .footer {
     height: 90vh;
   }
