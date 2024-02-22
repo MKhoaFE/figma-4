@@ -15,11 +15,7 @@ body {
     align-items: center;
     font-size: 30px;
   }
-  @media (max-width: 768px) {
-    background-color: rgba(0, 0, 0, 0.6);
-    .navbar-brand {
-    }
-  }
+
   .sidenav {
     display: none;
 
