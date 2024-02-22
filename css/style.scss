@@ -61,6 +61,18 @@ body {
       i {
         font-size: 39px;
       }
+
+
+      .item{
+        display: flex;
+        align-items: center;
+        padding: 8px 8px 8px 32px;
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        gap: 1rem;
+      }
       .active {
         color: #ff7757;
       }
@@ -571,8 +583,15 @@ body {
       width: 100%;
       margin: 0;
     }
-    h2 {
-      cursor: pointer;
+    h2{
+      text-align: center;
+    }
+    button {
+      background: none;
+      border: none;
+      font-weight: 600;
+      padding: 0;
+      text-align: left;
       @media (max-width: 1000px) {
         text-align: center;
       }
@@ -587,12 +606,11 @@ body {
         width: 90%;
       }
       .dropdown{
-        @media (max-width:1000px) {
-          display: none;
-        }
+        transition: all 0.3s ease;
       }
       p {
         font-weight: 400;
+        transition: all 0.3s ease;
       }
       h2 {
         text-align: left;
@@ -614,7 +632,10 @@ body {
     @media (max-width: 1000px) {
       height: 70vh;
     }
-    @media (max-height: 740px) {
+    @media (height: 740px) {
+      height: 90vh;
+    }    
+    @media (height: 667px) {
       height: 90vh;
     }
     .wrap {

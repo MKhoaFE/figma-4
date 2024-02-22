@@ -60,11 +60,12 @@ window.addEventListener('load', adjustTransform);
 
 
 //
-function dropdownFunction(){
-  var x = document.getElementById("test");
-  if(x.style.display === "none"){
-    x.style.display = "block";
+function dropdownFunction(parentLi){
+  var content = parentLi.querySelector("p");
+  if(content.style.display === "none" ){
+    content.style.display = "block";
   }else{
-    x.style.display = "none";
+    content.style.display = "none";
   }
+  
 }
