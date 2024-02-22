@@ -62,6 +62,16 @@ body {
   .header .sidenav i {
     font-size: 39px;
   }
+  .header .sidenav .item {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px 8px 32px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    gap: 1rem;
+  }
   .header .sidenav .active {
     color: #ff7757;
   }
@@ -633,12 +643,14 @@ body {
   }
 }
 .section .faq h2 {
-  cursor: pointer;
+  text-align: center;
 }
-@media (max-width: 1000px) {
-  .section .faq h2 {
-    text-align: center;
-  }
+.section .faq button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  padding: 0;
+  text-align: left;
 }
 .section .faq .title {
   margin-top: 1rem;
@@ -652,13 +664,12 @@ body {
     width: 90%;
   }
 }
-@media (max-width: 1000px) {
-  .section .faq .title .dropdown {
-    display: none;
-  }
+.section .faq .title .dropdown {
+  transition: all 0.3s ease;
 }
 .section .faq .title p {
   font-weight: 400;
+  transition: all 0.3s ease;
 }
 .section .faq .title h2 {
   text-align: left;
@@ -681,7 +692,12 @@ body {
     height: 70vh;
   }
 }
-@media (max-height: 740px) {
+@media (height: 740px) {
+  .section .footer {
+    height: 90vh;
+  }
+}
+@media (height: 667px) {
   .section .footer {
     height: 90vh;
   }

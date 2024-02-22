@@ -652,11 +652,6 @@ body {
   padding: 0;
   text-align: left;
 }
-@media (max-width: 1000px) {
-  .section .faq button {
-    text-align: center;
-  }
-}
 .section .faq .title {
   margin-top: 1rem;
   padding: 10px;
